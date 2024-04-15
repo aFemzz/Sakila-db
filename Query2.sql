@@ -1,6 +1,5 @@
 -- FIRST NAME WITH C
-SELECT first_name, last_name
+SELECT *
 FROM actor
-WHERE first_name LIKE 'C%'
-ORDER BY first_name
+WHERE SUBSTRING(first_name, 1, 1) = 'C'
 LIMIT 10;
